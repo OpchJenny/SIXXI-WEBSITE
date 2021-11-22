@@ -72,7 +72,7 @@ This is a Project for the ITCS379_Practical Software Engineering (Mj.SE) & ITCS4
 | 2 | Fill in valid username & password | Username: admin1 <br /> Password: admin1234 | Login successfully | Login successfully | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
 | 3 | Fill in valid username | Username: admin1 <br /> Password: {wrong password} | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
 | 4 | Fill in valid password | Username: {Username which doesn’t have in database} <br /> Password: admin1234 | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
-| 5 | Fill in invalid username & password | Username:- <br /> Password: - | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
+| 5 | Fill in invalid username or password | Username:- <br /> Password: - | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
 
 ## See the menu list 🌻
 | Test scenario ID | See the menu list | Test Case ID | SeeMenuList-1 | 
