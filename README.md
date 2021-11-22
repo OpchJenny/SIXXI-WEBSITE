@@ -53,11 +53,11 @@ This is a Project for the ITCS379_Practical Software Engineering (Mj.SE) & ITCS4
 | S.No | Action | Inputs | Expected Output | Actual Output | Test Browser | Test Result | Test Comments |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Launch the register page  | http://localhost:9999/LoginRegis.html | Register page | Register page | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Launch successful |
-| 2 | Fill in valid information | Username: admin1 Email: admin1@gmail.com Password: admin1234 | Register successfully | Register successfully | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
-| 3 | Fill in invalid password format | Username : admin1 Email : admin1@gmail.com Password: a | Password misformat alert | Password misformat alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
-| 4 | Leave the required field empty | Username: - Email: admin1@gmail.com Password: admin1234 | Empty field alert | Empty field alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
-| 5 | Fill in invalid email format | Username: admin1 Email: admin1 Password: admin1234 | Email misformat alert | Email misformat alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
-| 6 | Fill in duplicate username | Username: (duplicate username) Email: admin1@gmail.com Password: admin1234 | Username already in use alert | Username already in use alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
+| 2 | Fill in valid information | Username: admin1 <br /> Email: admin1@gmail.com <br /> Password: admin1234 | Register successfully | Register successfully | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
+| 3 | Fill in invalid password format | Username : admin1 <br /> Email : admin1@gmail.com <br /> Password: a | Password misformat alert | Password misformat alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
+| 4 | Leave the required field empty | Username: - <br /> Email: admin1@gmail.com <br /> Password: admin1234 | Empty field alert | Empty field alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
+| 5 | Fill in invalid email format | Username: admin1 <br /> Email: admin1 <br /> Password: admin1234 | Email misformat alert | Email misformat alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
+| 6 | Fill in duplicate username | Username: (duplicate username) <br /> Email: admin1@gmail.com <br /> Password: admin1234 | Username already in use alert | Username already in use alert | Google Chrome | Pass | [Thipwara 12/11/2021 10:48 AM]: Test successful |
 
 ## Login to the system 🌷
 | Test scenario ID | Login to the system  | Test Case ID | Login-1 | 
@@ -69,10 +69,10 @@ This is a Project for the ITCS379_Practical Software Engineering (Mj.SE) & ITCS4
 | S.No | Action | Inputs | Expected Output | Actual Output | Test Browser | Test Result | Test Comments |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Launch application | http://localhost:9999/LoginRegis.html | Login page | Login page | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Launch successful |
-| 2 | Fill in valid username & password | Username: admin1 Password: admin1234 | Login successfully | Login successfully | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
-| 3 | Fill in valid username | Username: admin1 Password: - | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
-| 4 | Fill in valid password | Username: - Password: admin1234 | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
-| 5 | Fill in invalid username & password | Username:- Password: - | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
+| 2 | Fill in valid username & password | Username: admin1 <br /> Password: admin1234 | Login successfully | Login successfully | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
+| 3 | Fill in valid username | Username: admin1 <br /> Password: - | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
+| 4 | Fill in valid password | Username: - <br /> Password: admin1234 | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
+| 5 | Fill in invalid username & password | Username:- <br /> Password: - | Invalid username /password alert | Invalid username /password alert | Safari | Pass | [Piraya 11/10/2021 11:10 AM]: Test successful |
 
 ## See the menu list 🌻
 | Test scenario ID | See the menu list | Test Case ID | SeeMenuList-1 | 
@@ -123,43 +123,43 @@ This is a Project for the ITCS379_Practical Software Engineering (Mj.SE) & ITCS4
 
 | Characteristic | Block 1 | Block 2 | Block 3 | Block 4 | Block 5 | 
 | --- | --- | --- | --- | --- | --- |
-| C1 = username is empty | TRUE | FALSE | --- | --- | --- | A
-| C2 = email is empty | TRUE | FALSE | --- | --- | --- | B
-| C3 = password is empty | TRUE | FALSE | --- | --- | --- | C
+| C1 = username is empty | TRUE | FALSE |  |  |  | A
+| C2 = email is empty | TRUE | FALSE |  |  |  | B
+| C3 = password is empty | TRUE | FALSE |  |  |  | C
 | C4 | format of username | whole is a number | whole is a normal character | Mixing no. and character | Mixing no.,char, special char | D
-| C5 = Email format | completely email format | incomplete email formate | --- | --- | --- | E
-| C6 = Format of password | length greather than 0 but less than 6 | length equal to 6 | length greather than 6  | --- | --- | F
-| C7 = Data duplicated | no duplicated | username duplicated | email duplicated | password duplicated | --- | G
+| C5 = Email format | completely email format | incomplete email formate |  |  |  | E
+| C6 = Format of password | length greather than 0 but less than 6 | length equal to 6 | length greather than 6  |  | - | F
+| C7 = Data duplicated | no duplicated | username duplicated | email duplicated | password duplicated |  | G
 
 **BCC = 13 test cases**
 
-Base : A2,B2,C2,D2.E1,F2,G1 admin,admin2@gmail.com, admin2
+Base : A2,B2,C2,D2.E1,F2,G1 admin, admin2@gmail.com, admin2
 
-A &emsp; A1,B2,C2,D2.E1,F2,G1 " ",admin3@gmail.com,admin3 *ignore functional char. of empty
+A &emsp; A1,B2,C2,D2.E1,F2,G1 " ", admin3@gmail.com, admin3 *ignore functional char. of empty
 
-B &emsp; A2,B1,C2,D2.E1,F2,G1 adminfour," ",admin4
+B &emsp; A2,B1,C2,D2.E1,F2,G1 adminfour," ", admin4
 
-C &emsp; A2,B2,C1,D2.E1,F2,G1 adminfive,admin5@gmail.com," "
+C &emsp; A2,B2,C1,D2.E1,F2,G1 adminfive, admin5@gmail.com," "
 
-D &emsp; A2,B2,C2,D1.E1,F2,G1 6666,admin6@gmail.com,admin6 A2,B2,C2,D3.E1,F2,G1 #$%^,admin7@gmail.com,admin7 A2,B2,C2,D4.E1,F2,G1 admin8,admin8@gmail.com,admin8 A2,B2,C2,D5.E1,F2,G1 @dmin9,admin9@gmail.com,admin9
+D &emsp; A2,B2,C2,D1.E1,F2,G1 6666, admin6@gmail.com, admin6 A2,B2,C2,D3.E1,F2,G1 #$%^, admin7@gmail.com, admin7 A2,B2,C2,D4.E1,F2,G1 admin8, admin8@gmail.com, admin8 A2,B2,C2,D5.E1,F2,G1 @dmin9, admin9@gmail.com, admin9
 
-E &emsp; A2,B2,C2,D2.E2,F2,G1 adminten,admin10@gmail, admin10 
+E &emsp; A2,B2,C2,D2.E2,F2,G1 adminten, admin10@gmail, admin10 
 
-F &emsp; A2,B2,C2,D2.E1,F2,G2 adminzero,admin0@gmail.com, admin A2,B2,C2,D2.E1,F2,G3 adminoneone,admin11@gmail.com, admin11test
+F &emsp; A2,B2,C2,D2.E1,F2,G2 adminzero, admin0@gmail.com, admin A2,B2,C2,D2.E1,F2,G3 adminoneone, admin11@gmail.com, admin11test
 
-G &emsp; A2,B2,C2,D2.E1,F2,G2 adminonetwo,admin12@gmail.com, admin12 A2,B2,C2,D2.E1,F2,G3 adminonetwo,admin13@gmail.com, admin13 A2,B2,C2,D2.E1,F2,G4 adminonethree,admin14@gmail.com, admin13
+G &emsp; A2,B2,C2,D2.E1,F2,G2 adminonetwo, admin12@gmail.com, admin12 A2,B2,C2,D2.E1,F2,G3 adminonetwo, admin13@gmail.com, admin13 A2,B2,C2,D2.E1,F2,G4 adminonethree, admin14@gmail.com, admin13
 
 **Identify possble values**
 
 | Characteristic | Block 1 | Block 2 | Block 3 | Block 4 | Block 5 | 
 | --- | --- | --- | --- | --- | --- |
-| C1 = username is empty | " " | admin2 | --- | --- | --- | 
-| C2 = email is empty | " " | admin2@gmail.com | --- | --- | --- | 
-| C3 = password is empty | " " | admin2 | --- | --- | --- | 
+| C1 = username is empty | " " | admin2 |  |  |  | 
+| C2 = email is empty | " " | admin2@gmail.com |  |  |  | 
+| C3 = password is empty | " " | admin2 |  |  |  | 
 | C4 = format of username | 12345 | admin | @#$ | admin2 | admin2! |
-| C5 = Email format | admin2@gmail.com | admin2@gmail | --- | --- | --- | 
-| C6 = Format of password | admin | length equal to 6 | admin2  | --- | --- | 
-| C7 = Data duplicated | no duplicated | username duplicated | email duplicated | password duplicated | --- | 
+| C5 = Email format | admin2@gmail.com | admin2@gmail |  |  |  | 
+| C6 = Format of password | admin | length equal to 6 | admin2  |  |  | 
+| C7 = Data duplicated | no duplicated | username duplicated | email duplicated | password duplicated |  | 
 
 **Remark**
 
@@ -208,34 +208,34 @@ False, False, False &emsp; admin1, admin1234, Username: admin1 Password: -
 | Module | TR # | Technical requirement | 
 | --- | --- | --- | 
 | Register | T80 | Required field must not be blank | 
-| --- | T81 | Username is not duplicate | 
-| --- | T82 | Correct format of E-mail | 
-| --- | T83 | Correct format of passsword | 
-| --- | T84 | If username, email and password are valid then register | 
+|  | T81 | Username is not duplicate | 
+|  | T82 | Correct format of E-mail | 
+|  | T83 | Correct format of passsword | 
+|  | T84 | If username, email and password are valid then register | 
 | Login | T85 | Required field must not be blank | 
-| --- | T86 | Valid username | 
-| --- | T87 | Valid password | 
-| --- | T88 | If username and password are match with the database, then login | 
+|  | T86 | Valid username | 
+|  | T87 | Valid password | 
+|  | T88 | If username and password are match with the database, then login | 
 | Search menu | T89 | The search bar should show the menu of food that user search | 
 | Menu list | T90 | The menu should show in the categories | 
-| --- | T91 | The website should show the information of food when 
+|  | T91 | The website should show the information of food when 
 hold the mouse on the picture | 
 | Menu's information | T92 | The website should show the menu information of the menu | 
-| --- | T93 | The minus or plus button can click to add more items or decrease items | 
+|  | T93 | The minus or plus button can click to add more items or decrease items | 
 
 ### Requirement Traceability Matrix (RTM) 📗
 | TestCase # | BR # | TR # | Test Case | Test Steps | Test Data | Expected Result | 
 | --- | --- | --- | --- | --- | --- | --- | 
-| 1 | B1 | T80 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username: admin1 <br /> Email: admin1@gmail.com <br /> Password: - | Register failed <br /> (Invalid password) | 
-| 2 | B1 | T81 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username : {duplicated username} <br /> Email: admin1@gmail.com <br /> Password : admin1 | Register failed <br /> (Username already in use) | 
-| 3 | B1 | T82 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username: admin1 <br /> Email: admin1@ <br /> Password: admin1234 <br /> | Register failed <br /> (pleaseinclude an @ at the {email}) | 
-| 4 | B1 | T83 | Verify register | --- | --- | --- | 
-| 5 | B1 | T84 | Verify register | --- | --- | --- | 
-| 6 | B2 | T85 | Verify login | --- | --- | --- | 
-| 7 | B2 | T86 | Verify login | --- | --- | --- | 
-| 8 | B2 | T87 | Verify login | --- | --- | --- | 
-| 9 | B2 | T88 | Verify login | --- | --- | --- | 
-| 10 | B3 | T89 | Search menu | --- | --- | --- | 
-| 11 | B4 | T90, T91 | See the menu list | --- | --- | --- |
-| 12 | B5 | --- | --- | --- | --- | --- | 
+| 1 | B1 | T80 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username: admin1 <br /> Email: admin1@gmail.com <br /> Password: - | Register failed <br /> [Invalid password] | 
+| 2 | B1 | T81 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username : {duplicated username} <br /> Email: admin1@gmail.com <br /> Password : admin1 | Register failed <br /> [Username already in use] | 
+| 3 | B1 | T82 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username: admin1 <br /> Email: admin1@ <br /> Password: admin1234 <br /> | Register failed <br /> [pleaseinclude an @ at the {email}] | 
+| 4 | B1 | T83 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username : test12 <br /> Email : test12@gmail.com <br /> Password : test | Register failed <br /> [Password too small. Should be atleast 6 characters] | 
+| 5 | B1 | T84 | Verify register | 1.Go to register page <br /> 2.Enter Username <br /> 3.Enter Email <br /> 4.Enter password <br /> 5.Click register | Username : {new username} <br /> Email : {new email} <br /> Password : {new password} | Register successful | 
+| 6 | B2 | T85 | Verify login | 1.Go to login page <br /> 2.Enter username <br /> 3.Enter password | Username : - <br /> Password : admin1234 | Login failed <br /> [Invalid username/password] | 
+| 7 | B2 | T86 | Verify login | 1.Go to login page <br /> 2.Enter username <br /> 3.Enter password | Username : admin1 <br /> Password : {invalid password} | Login failed <br /> [Invalid username/password] | 
+| 8 | B2 | T87 | Verify login | 1.Go to login page <br /> 2.Enter username <br /> 3.Enter password | Username : {invalid username} <br /> Password : admin1234 | Login failed | 
+| 9 | B2 | T88 | Verify login | 1.Go to login page <br /> 2.Enter username <br /> 3.Enter password | Username : admin1 <br /> Password : admin1234 | Login successful | 
+| 10 | B3 | T89 | Search menu | 1. Click on the Menu tab in Homepage  <br /> 2. Select the main dish or dessert <br /> 3. Search for the menu by name <br /> 4. Select the menu | T | User can search menu which menu name begin with T | 
+| 11 | B4 | T90, T91 | See the menu list | 1. Click on the Menu tab in Homepage <br /> 2. Select the main dish or dessert <br /> 3. See the menu list | N/A | User can see the menu list <br /> of main dish or dessert |
+| 12 | B5 | T92 | See the menu's information  | 1. Click on the Menu tab in HomePage <br /> 2. Select the main dish or dessert <br /> 3. Click see more button for exploring more details of menu <br /> 4. Slide to see more food photo | N/A | User can see the menu information | 
 
